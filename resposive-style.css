@@ -1,0 +1,293 @@
+/*===================== Media Queries ============================ */
+/*medium devices: 767 >*/
+@media (min-width: 767px) {
+  :root {
+    --title-font-size: 1.2rem;
+    --subtitle-font-size: 1rem;
+  }
+
+  #testimonials .container {
+    max-width: 767px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*  .section {
+    padding: 5rem 0;
+  } */
+
+  .section header, #testimonials header {
+    max-width: 32rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button {
+    height: 3.1256rem;
+  }
+
+  .text p {
+    font-size: var(--subtitle-font-size);
+  }
+
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+
+  nav .menu ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav .menu ul li a.title {
+    font: 400 var(--subtitle-font-size) var(--body-fonts);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  nav .menu ul li a.title.active {
+    font-weight: bold;
+    -webkit-font-smoothing: auto;
+  }
+
+  nav .icon-menu {
+    display: none;
+  }
+
+  main {
+    margin-top: calc(var(--header-height));
+  }
+
+  /*HOME*/
+  #home .container {
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  #home .image {
+    order: 1;
+  }
+
+  #home .text {
+    order: 0;
+    max-width: 20rem;
+    text-align: left;
+  }
+
+  /*About*/
+  #about .image {
+    max-width: 35rem;
+    justify-self: center;
+  }
+
+  #about .image::before {
+    left: -7%;
+  }
+
+  #about .text p {
+    text-align: justify;
+  }
+
+  /*Services*/
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .card p {
+    text-align: initial;
+  }
+
+  /*Services*/
+  #services.section {
+    padding: 5rem 0;
+  }
+
+  /*Contact*/
+  #contact .container {
+    grid-auto-flow: column;
+    align-items: center;
+
+  }
+
+  #contact .text {
+    max-width: 25rem;
+  }
+
+  /*Footer*/
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer .logo {
+    font-size: 2.25rem;
+  }
+}
+
+/*medium devices: 992 >*/
+@media (min-width: 992px) {
+  :root {
+    --title-font-size: 2.25rem;
+    --subtitle-font-size: 1.3rem;
+  }
+
+  .section{
+    padding: 10rem 0;
+  }
+  
+  #about .container {
+    grid-auto-flow: column;
+  }
+
+  #about .image::before {
+    left: -33%;
+    height: 50%;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #testimonials .container {
+    max-width: 992px;
+  }
+}
+
+/*large devices: 1023 > */
+@media (min-width: 1023px) {
+  :root {
+    --title-font-size: 1.8rem;
+    --subtitle-font-size: 1.13rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/*extra large devices: 1200 > */
+@media (min-width: 1200px) {
+  .container, #testimonials .container {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section {
+    padding: 10rem 0;
+  }
+
+  .section header, #testimonials header {
+    max-width: 32rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button {
+    height: 3.1256rem;
+  }
+
+  #header .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+
+  nav .menu ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav .menu ul li a.title {
+    font: 400 var(--subtitle-font-size) var(--body-fonts);
+    -webkit-font-smoothing: antialiased
+  }
+
+  nav .menu ul li a.title.active {
+    font-weight: bold;
+    -webkit-font-smoothing: auto;
+  }
+
+  nav .icon-menu {
+    display: none;
+  }
+
+  main {
+    margin-top: calc(var(--header-height));
+  }
+
+  /*HOME*/
+  #home .container {
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  #home .image {
+    order: 1;
+  }
+
+  #home .text {
+    order: 0;
+    max-width: 24rem;
+    text-align: left;
+    margin: 0;
+  }
+
+  /*About*/
+  #about .container {
+    margin: 0 auto;
+    grid-auto-flow: column;
+  }
+
+  /*Services*/
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  /*Contact*/
+  #contact .container {
+    grid-auto-flow: column;
+    align-items: center;
+  }
+
+  #contact .text {
+    max-width: 25rem;
+  }
+
+  /*Footer*/
+  footer.section {
+    padding: 3.75rem 0;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer .logo {
+    font-size: 2.25rem;
+  }
+
+}
