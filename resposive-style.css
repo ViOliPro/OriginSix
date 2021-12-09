@@ -143,7 +143,7 @@
   .section{
     padding: 10rem 0;
   }
-  
+
   #about .container {
     grid-auto-flow: column;
   }
@@ -171,6 +171,9 @@
 
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  #about .image::before {
+    height: 80%;
   }
 }
 
